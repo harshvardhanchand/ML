@@ -1,0 +1,36 @@
+There are various types of ml algos
+1.Supervised
+2.Unsupervised
+3.Reinforcement
+4.Recommender system
+Where to apply what is very important
+"A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."
+1.Right answer is given in 1
+Classification problem - discrete output(0 or 1)
+Regression problem - continuous output (0 to 1)
+Unsupervised learning - no output given to us by the algorithm (e.g. clustering)
+clustering - grouping similar data points together(like google news grouping one topic different news website)
+applications of clustering - clustering of data points to find patterns in data (e.g. clustering of data points to find patterns in data like social network analysis market segmentation)
+Non-clustering finding order in chaos like isolating different voices in a cocktail party
+Cost function: cost of clustering is the sum of the distances between the points in the cluster and the centroid of the cluster
+Squared cost function:Linear Regression - cost function is the sum of the squared errors difference between predicted value and actual value
+We have to minimize cost function
+
+Gradient descent: Gradient descent is a method of minimizing a function by iteratively moving in the direction of a local minimum.
+Gradient descents algorithm is a simple method of finding the minimum of a function,using partial derivatives of the function.
+The slope of the tangent is the derivative at that point and it will give us a direction to move towards. We make steps down the cost function in the direction with the steepest descent. The size of each step is determined by the parameter α, which is called the learning rate. The learning rate is the speed at which the algorithm moves down the cost function.
+learning rate too high - algorithm will overshoot. learning rate too low - algorithm will take too long to converge, and may not find the minimum, or may find a local minimum.
+Gradient descent can converge even if learning rate is fixed.
+Gradient descent works best for convexq functions,as it has a unique solution.
+Tensor is a generalization of matrix.Scalar is a rank zero Tensor.List is a rank one Tensor.Matrix is a rank two Tensor.Tensor is a rank three Tensor.
+Linear regression can also work for multiple features, new form is y= c +mx1 +m1x2 +m2x3 +...
+it can also be written in matrix form y= [c m1 m2 m3 ...]*[x1;x2;x3;...]
+Similarly gradient descent can also be used for multiple features.formula is y= [c m1 m2 m3 ...]*[x1;x2;x3;...] + [b1 b2 b3 ...] where b1,b2,b3 are the bias terms.
+Feature scaling i.e features are on a same scale is an extremly important step in machine learning.Like predicting prices of house in different regions,scaling house size no.of floors to same scale.
+Mean normalization: Normalization is a process of scaling the features to have a mean of zero and a standard deviation of one.
+Polynominal regression: Polynominal regression is a linear regression model in which the dependent variable is a polynomial of a given degree.
+We can also use normal equation to solve polynomial regression.i.e simple differntation or partial differnation and finding where it is zero.
+We can use ax=b i.e matrix sols to solve polynomial regression.theta = (x.T*x)^-1*x.T*y where x is the matrix of features and y is the vector of dependent variable.
+No need to use feature scaling method in normal equation.Normal eq is used  when matrix is of small dimensions.
+X.T*X is singular try to eliminate redundant features or use regularization and delete linearly dependent features.
+
